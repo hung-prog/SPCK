@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Rubik+Wet+Paint&family=Shadows+Into+Light&family=Sixtyfour+Convergence&family=Sofadi+One&family=Unlock&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+    </svg>
+  </button>
+  <div class="welcome d-flex justify-content-center ">
+    <h1 class="prompt-regular fs-6 ">
+      have a great time at here
+    </h1>
+  </div>
+  <nav class="navbar  ">
+    <div class="container d-flex justify-content-between">
+      <a href="#">
+        <img class="brand "
+          src="data:image/jpeg;base64,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"
+          alt="">
+      </a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <button class="navbar-toggler " style="margin-right: 20px;" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" style="margin-bottom: 200px;" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" style="margin-bottom: 185px; margin-left: 30px;" class="btn-close"
+            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+  </div>
+  <div>
+    <img class="mainfilm"
+      src="https://s.studiobinder.com/wp-content/uploads/2020/09/Movie-Themes-Examples-of-Common-Themes-for-Screenwriters-Featured.jpg"
+      alt="">
+    <h4 class="mainword">
+      Enjoy and watch <br>any film you like
+    </h4>
+    <div class="main">
+      <h3>
+        <button type="button" class="mainbutton rounded-2">
+          Chilltime
+        </button>
+      </h3>
+    </div>
+  </div>
+  <div>
+    <h2 class="trending">Trending</h2>
+  </div>
+  <div class="" id="trending">
+    
+  </div>
+  <div>
+    <img style="width: 100%;" class="inviteimg"
+      src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/300504067_445684367592498_5957156852801815606_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=ZocOoWI1q08Q7kNvgHUHdX6&_nc_oc=AdiUufcq5duelr6iD6CTABFjtgeURI5OAV9z8WRBhy5W2rFVdVZCJSVYLijHy46F5FfY604zyTyJbejrKiuFJKq0&_nc_zt=23&_nc_ht=scontent.fsgn2-6.fna&_nc_gid=AqEQWf0LLxI2P4zoJfIGcTU&oh=00_AYCctKQ7fZ9zDuvA2GDrBYrTeRgpfrTwPxEz6sFf2bEk9g&oe=67B3E603"
+      alt="">
+    <h6 class="Inviteword">Join now</h6>
+    <p class="Invite">Get access to maintain your own <em>custom personal lists</em>, track what you've seen and search
+      and filter for <em>what </em><br> <em>to watch next</em>—regardless if it's in theatres or on TV.</p>
+    <div class="button col-auto">
+      <p class="wbutton">
+        <button data-mdb-ripple-init type type="button" class="btn btn-info mb-4">Sign up</button>
+      </p>
+    </div>
+  </div>
+
+
+
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
